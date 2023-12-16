@@ -1,5 +1,5 @@
 @echo off
-title TJprojMain remover
+title TJprojMain remover NIGGA
 echo Starting soon, don't touch anything
 timeout 3 > NUL
 cls
@@ -9,11 +9,11 @@ if %CD%==E:\ goto DeleteE
 
 
 :DeleteC
-attrib -h -r -s /s /d C:\Windows\Resources\svchost.exe
-attrib -h -r -s /s /d C:\Windows\Resources\spoolsv.exe
-attrib -h -r -s /s /d C:\Windows\Resources\Themes\explorer.exe
-attrib -h -r -s /s /d C:\Windows\Resources\Themes\icsys.icn.exe
-wmic process where ExecutablePath='C:\\Windows\\Resources\\svchost.exe' CALL TERMINATE /nointeractive
+attrib -h -r -s /s /d C:\svchost.exe
+attrib -h -r -s /s /d C:\spoolsv.exe
+attrib -h -r -s /s /d C:\explorer.exe
+attrib -h -r -s /s /d C:\icsys.icn.exe
+wmic process where ExecutablePath='C:\\svchost.exe' CALL TERMINATE /nointeractive
 del /f /A:S C:\Windows\Resources\svchost.exe
 del /f C:\Windows\Resources\svchost.exe
 wmic process where ExecutablePath='C:\\Windows\\Resources\\Themes\\explorer.exe' CALL TERMINATE /nointeractive
